@@ -4,6 +4,7 @@ import { AboutMe } from "./Pages/AboutMe"
 import Projects from "./Pages/Projects"
 import NotFound from "./Pages/NotFound"
 import { Layout } from "./containers/Layout"
+import NavBar from "./components/NavBar"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <HashRouter>
+        <NavBar />
         <Layout>
           <AppRoutes />
         </Layout>
