@@ -6,7 +6,7 @@ interface Props {
 
 export const Layout = ({children}: Props) => {
     return (
-      <div className='w-full h-screen bg-gray-100 pt-8 px-2'>
+      <div className='w-full h-full bg-gray-300 pt-8 px-2'>
           {children}
       </div>
     )
