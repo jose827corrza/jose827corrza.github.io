@@ -1,10 +1,32 @@
+import { HashRouter, useRoutes } from "react-router-dom"
+import { Home } from "./Pages/Home"
+import { AboutMe } from "./Pages/AboutMe"
+import {Projects} from "./Pages/Projects"
+import {NotFound} from "./Pages/NotFound"
+import { Layout } from "./containers/Layout"
+import {NavBar} from "./components/NavBar"
 
 
 function App() {
 
+  const AppRoutes = () => {
+    const routes = useRoutes([
+      {path: '/', element: <Home />},
+      {path: '/about-me', element: <AboutMe />},
+      {path: '/projects', element: <Projects />},
+      {path: '*', element: <NotFound />},
+    ])
+    return routes
+  }
+
   return (
     <>
-      <h1 className='text-purple-400 text-3xl font-sans'>Test</h1>
+      <HashRouter>
+        <NavBar />
+        <Layout>
+          <AppRoutes />
+        </Layout>
+      </HashRouter>
     </>
   )
 }
