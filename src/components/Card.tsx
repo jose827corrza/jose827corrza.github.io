@@ -1,7 +1,6 @@
 import { AiFillGithub } from 'react-icons/ai';
 import { FaRocket } from 'react-icons/fa';
 
-import go from '../assets/golang.png'
 
 interface Props {
     title: string,
