@@ -32,8 +32,8 @@ const projects = [
       "GORM"
     ],
     repo: "https://github.com/jose827corrza/go-store-websockets",
-    isDeployed: false,
-    deployUrl: ""
+    isDeployed: true,
+    deployUrl: "https://jose827corrza.github.io/go-store-websockets"
   },
   {
     title: "Geek Store",
@@ -44,8 +44,8 @@ const projects = [
       "Docker"
     ],
     repo: "https://github.com/jose827corrza/nest_geek_store.git",
-    isDeployed: false,
-    deployUrl: ""
+    isDeployed: true,
+    deployUrl: "https://nest-geek-store.onrender.com/docs/"
   },
   {
     title: "Java Spring Market",
