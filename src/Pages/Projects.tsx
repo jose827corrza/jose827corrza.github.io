@@ -48,6 +48,17 @@ const projects = [
     deployUrl: "https://nest-geek-store.onrender.com/docs/"
   },
   {
+    title: "Tweeter FastAPI",
+    description: "This API emulates the basic behavior of X, the users password are encrypted and also to create a POST is necesary to login, which return a JWT token to auth",
+    technologies: [
+      "Python",
+      "Docker"
+    ],
+    repo: "https://github.com/jose827corrza/backend-posts-fastapi",
+    isDeployed: true,
+    deployUrl: "https://tweet-fastapi.onrender.com/docs"
+  },
+  {
     title: "Java Spring Market",
     description: "Backend using Java's framework Spring, the basic Ecommerce where the API manages Users and Products tables with relations between these entities",
     technologies: [
